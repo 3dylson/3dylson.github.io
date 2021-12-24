@@ -148,6 +148,10 @@ hr.divider {
   opacity: 1;
 }
 
+#projects {
+  padding-top: 4rem;
+}
+
 #projects .container-fluid,
 #projects .container-sm,
 #projects .container-md,
