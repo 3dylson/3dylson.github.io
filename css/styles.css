@@ -11,6 +11,25 @@ html {
   background-color: whitesmoke;
 }
 
+#particles-js {
+  /* width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #b61924;
+  background-image: url("");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  z-index: -1; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
@@ -148,8 +167,44 @@ hr.divider {
   opacity: 1;
 }
 
+#portfolio {
+  background: url("../assets/img/bg-skills.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+}
+
+#portfolio::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(66, 75, 92, 0.8);
+  z-index: 9;
+}
+
+#portfolio .container {
+  position: relative;
+  z-index: 10;
+}
+
+@media (min-width: 1024px) {
+  #portfolio  {
+    background-attachment: fixed;
+  }
+}
+
 #projects {
   padding-top: 4rem;
+}
+
+
+@media screen and (max-width: 1300px) {
+   #myCanvas {
+    width: 100%;
+  } 
 }
 
 #projects .container-fluid,
@@ -263,3 +318,4 @@ hr.divider {
   background: rgba(0, 0, 0, 0.877);
   border-radius: 50px;
 }
+
